@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Unplugged</title>
+  <title>Unplugged Retreat</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,9 +26,9 @@
 <!-- Add your site or application content here -->
 <body>
   <header>
-    <div>
+    <div class="content-wrapper">
       <a href="#"><img src="" alt="unplugged logo"></a>
-      <div></div>
+      <div class="header-divider"></div>
       <nav>
         <ul>
           <li><a href="faq/index.html" target="_blank" rel="noopener">FAQ</a></li>
@@ -39,40 +39,49 @@
   </header>
 
   <main>
-    <section>
-      <div class="hero-area">
+    <section class="hero-area">
+      <div class="content-wrapper">
         <h1>Retreat from the desk, return refreshed.</h1>
       </div>
     </section>
+
     <aside>
       <!-- Newsletter signup -->
-      <div>
-        <h3>Want to join the next retreat?</h3>
-        <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-      </div>
-      <div>
-        <h3>Find out more</h3>
-        <input type="text" name="email" placeholder="name@email.com">
-        <input type="button" value="Download Itinerary">
-      </div>
-    </aside>
+      <div class="content-wrapper">
+        <div class="form-description">
+          <h3>Want to join the next retreat?</h3>
+          <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+        </div>
+        <div class="form">
+          <h3>Find out more</h3>
+          <input type="text" name="email" value="name@email.com">
+          <input type="button" value="Download Itinerary">
+        </div>
+      </div>  
+    </aside> <!-- aside content wrapper ends -->
+
   </main> <!-- main wrapper -->
 
   <footer>
-    <div class="footer-content">
-      <div class="contact">
-        <h4>Contact</h4>
-        <address>555-555-5555<br>hello@unplugged.com</address>
-      </div>
-      <div class="social">
-        <h4>Social</h4>
-        <p>Facebook https://www.facebook.com/getawayhouse/</p>
-        <p>Twitter https://twitter.com/getaway_house</p>
-        <p>Instagram https://www.instagram.com/getawayhouse/?hl=en</p>
-      </div>
-      <div class="copyright">
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <div class="contact">
+          <h4>Contact</h4>
+          <address>555-555-5555<br>hello@unplugged.com</address>
+        </div>
+        <div class="social">
+          <h4>Social</h4>
+          <div class="social-icons">
+            <p><a href="https://www.facebook.com/getawayhouse/" target="_blank"></a></p>
+            <p><a href="https://twitter.com/getaway_house" target="_blank"></a></p>
+            <p><a href="https://www.instagram.com/getawayhouse/?hl=en" target="_blank"></a></p>
+          </div>
+        </div>
+      </div> <!-- footer content ends -->
+    </div> <!-- footer content-wrapper ends -->
+
+    <div class="copyright">
       <p>Copyright 202X | Unplugged</p>
-      </div>
     </div>
   </footer>
 
