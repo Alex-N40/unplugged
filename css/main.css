@@ -89,6 +89,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+    outline: 1px dotted green;
+  }
+
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }   
+
 /*----- BASE HEADER - FOOTER STYLES -----*/
 header,
 footer {
@@ -96,34 +105,43 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}   
+}
 
 
 
 /*----- HEADER STYLES -----*/
-header {}
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header img /*figure*/ {}
 
-.header-divider {}
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 header nav ul li {}
@@ -142,6 +160,7 @@ header nav ul li a {}
 
 .hero-area .content-wrapper {}
 
+
 /*----- ASIDE -----*/
 aside {
   display: flex;
@@ -150,13 +169,14 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
-}
+aside .content-wrapper {}
 
-.form-description {
-}
+.form-description {}
+
+aside h3 {}
 
 .form {}
+
 
 /*----- FEATURES -----*/
 .features {
@@ -167,12 +187,27 @@ aside .content-wrapper {
 
 .features .content-wrapper {}
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
+.features article {
+  width: 63%;
+  padding: 30px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features .fontawesome-icon {}
 
 .features-item-description {}
 
@@ -185,6 +220,15 @@ aside .content-wrapper {
 
 .reviews .content-wrapper {}
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
 
 
 /*----- MOBILE STYLES -- ABOUT PAGE -----*/
@@ -195,11 +239,31 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
+.mission .contact-wrapper {}
+
+.mission h2 {}
+
+.mission .mission-content {}
+
+.mission .mission-content p {}
+
+.map {}
+
 .contact-section {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.contact-section .contact-wrapper {}
+
+.contact-section h2 {}
+
+.contact-section .contact-content {}
+
+.contact-content p {
+  margin: 0;
 }
 
 
@@ -217,23 +281,45 @@ aside .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
 
+.faq .faq-content {
+  margin-bottom: 50px;
+}
+
+.faq h4 {}
 
 
 
 /*----- FOOTER STYLES -----*/
-footer {}
+footer {
+  flex-direction: column;
+}
 
 footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .footer-content {}
 
-footer .contact {}
+footer .contact {
+  margin-bottom: 50px;
+}
 
-footer .social {}
+footer h4 {}
+
+footer p {
+  margin: 0;
+}
+
+footer .social {
+}
 
 footer .social-icons {
   display: flex;
@@ -247,11 +333,9 @@ footer .social-icons p {
   align-items: center;
 }
 
-.copyright {}
-
-
-
-
+footer .copyright {
+  margin: 20px 0;
+}
 
 
 
