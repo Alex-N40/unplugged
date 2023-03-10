@@ -84,64 +84,67 @@ textarea {
 }
 
 
-/* ==========================================================================
+/* =====================================================================
    Author's custom styles
-   ========================================================================== */
+   ==================================================================== */
 
-  /*----- General Styles -----*/
-  html {
-    font-size: 16px;
-  }
+/** {
+    outline: 1px dotted green;
+  }*/
 
-  body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    text-align: left;
-  }
+/*----- General Styles -----*/
+html {
+  font-size: 16px;
+}
 
-  ul,
-  ol {
-    list-style: none;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  color: #e2e3ed;
+}
 
-  a {
-    color: #e2e3ed;
-    text-decoration: none;
-  }
+ul,
+ol {
+  list-style-type: none;
+}
 
-  h2 {
-    font-family: 'Poppins' sans-serif;
-    font-size: 1.875em; /*30px*/
-  }
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
 
-  h3,
-  h4 {
-    font-family: 'Poppins' sans-serif;
-    font-size: 1.125em; /*18px*/
-    margin: 20px 0;
-  }
+h2 {
+  font-family: 'Poppins' sans-serif;
+  font-size: 1.875em; /*30px*/
+  font-weight: 500;
+}
 
-  p {
-    font-size: .875em; /*14px*/
-    line-height: 1.125em; /*18px*/
-  }
+h3,
+h4 {
+  font-family: 'Poppins' sans-serif;
+  font-size: 1.125em; /*18px*/
+  margin: 20px 0;
+  font-weight: 500;
+}
 
-  img {}
+p {
+  font-size: .875em; /*14px*/
+  line-height: 1.285; /*18px, unitless, calculated by dividing line-height by font-size: 18/14=1.285*/
+}
 
-  figure {}
+figure {}
 
-  address {
+img {}
+
+address {
     font-style: normal;
   }
 
-  * {
-    outline: 1px dotted green;
-  }
-
 .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }   
+  width: 90%;
+  margin: 50px 0;
+}   
 
 /*----- Base Header - Footer Styles -----*/
 header,
@@ -150,6 +153,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 /*----- Header Styles -----*/
@@ -169,6 +173,7 @@ header .content-wrapper {
   width: 90%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
@@ -177,6 +182,9 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em; /*18px*/
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -185,9 +193,14 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em; /*18px*/
+}
+
 /*----- Footer Styles -----*/
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -229,12 +242,49 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.25em; /*36px*/
+  line-height: 1.2; /*43px, unitless, calculated by dividing line-height by font-size: 43/36=1.2*/
+  font-weight: 500;
+}
+
 /*----- Aside -----*/
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  /*font-size: 1.125em; /*18px*/
+  /*font-weight: 500;*/
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*----- Features -----*/
@@ -262,6 +312,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /*----- Reviews -----*/
@@ -269,10 +320,12 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1; /*30px, unitless, calculated by dividing line-height by font-size: 30/30=1*/
 }
 
 .reviews h3 {
@@ -287,6 +340,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -294,6 +348,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -307,6 +362,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -319,10 +375,15 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1; /*30px, unitless, calculated by dividing line-height by font-size: 30/30=1*/
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333; /*24px, unitless, calculated by dividing line-height by font-size: 24/18=1.333*/
 }
 
 
@@ -424,6 +485,21 @@ aside {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em; /*36px*/
+    line-height: 1.333; /*48px, unitless, calculated by dividing line-height by font-size: 48/36=1*/
+  }
+
+  h3 {
+    font-size: 1.5em; /*24px*/
+    line-height: 1.25; /*30px, unitless, calculated by dividing line-height by font-size: 30/24=1.25*/
+  }
+
+  p {
+    font-size: 1.125em; /*18px*/
+    line-height: 1.333; /*24px, unitless, calculated by dividing line-height by font-size: 24/18=1.333*/
+  }
+
   /*----- Header -----*/
   header {
     justify-content: space-around;
@@ -433,6 +509,10 @@ aside {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -450,6 +530,11 @@ aside {
   /*--------------- TABLET STYLES -- HOMEPAGE ---------------*/
 
   /*----- Hero Area -----*/
+  .hero-area h1 {
+    font-size: 3em; /*48px*/
+    line-height: 1; /*48px, unitless, calculated by dividing line-height by font-size: 48/48=1*/
+    margin: 0;
+  }
 
   /*----- Aside -----*/
   aside .content-wrapper {
@@ -466,6 +551,10 @@ aside {
   }
 
   /*----- Features -----*/
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -479,6 +568,10 @@ aside {
   }
 
   /*----- Reviews -----*/
+  .reviews h2 {
+    width: 85%;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -488,16 +581,22 @@ aside {
     width: 49%;
   }
 
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
   /*----- Footer -----*/
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -506,6 +605,15 @@ aside {
 
   footer .copyright {
     width: 100%;
+  }
+
+  footer h4 {
+    font-size: 1.5em; /*24px*/
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285; /*18px, unitless, calculated by dividing line-height by font-size: 18/14=1.285*/
   }
 
   /*--------------- TABLET STYLES -- ABOUT PAGE ---------------*/
@@ -534,10 +642,6 @@ aside {
 
   /*--------------- TABLET STYLES -- FAQ PAGE ---------------*/
 
-  header {
-    padding: 15px 0;
-  }
-
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -549,6 +653,12 @@ aside {
   .faq-content {
     flex-basis: 45%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em; /*14px*/
+    line-height: 1.125; /*15.75px, unitless, calculated by dividing line-height by font-size: 15.75/14=1.125*/
+  }
 }    
 
 
@@ -556,10 +666,28 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /*--------------- DESKTOP STYLES HERE ----------------*/
-
+  
   /*----- General Styles -----*/
   .content-wrapper {
     max-width: 960px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2.25em; /*36px*/
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em; /*30px*/
+  }
+
+  p {
+    font-size: 1.125em; /*18px*/
+    line-height: 1.333; /*24px, unitless, calculated by dividing line-height by font-size: 24/18=1.333*/
   }
 
   /*--------------- DESKTOP STYLES -- HOMEPAGE ---------------*/
@@ -567,6 +695,7 @@ aside {
   /*----- Hero Area -----*/
   .hero-area h1 {
     width: 70%;
+    font-size: 3.75em; /*60px*/
   }
 
   /*----- Aside -----*/
@@ -589,20 +718,40 @@ aside {
   }
 
   /*----- Reviews -----*/
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
     width: 42%;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /*--------------- DESKTOP STYLES -- ABOUT PAGE ---------------*/
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
-  }  
+    font-size: 3em; /*48px*/
+  } 
+
+  .contact-content h4 {
+    font-size: 1.875em; /*30px*/
+  }
 
 
   /*--------------- DESKTOP STYLES -- FAQ PAGE ---------------*/
   .faq h2 {
     width: 100%;
+    font-size: 3em; /*48px*/
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em; /*18px*/
+    line-height: 1; /*18px*, unitless, calculated by dividing line-height by font-size: 18/18=1*/
   }
 
 }
