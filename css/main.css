@@ -115,14 +115,14 @@ a {
 }
 
 h2 {
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.875em; /*30px*/
   font-weight: 500;
 }
 
 h3,
 h4 {
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.125em; /*18px*/
   margin: 20px 0;
   font-weight: 500;
@@ -133,9 +133,13 @@ p {
   line-height: 1.285; /*18px, unitless, calculated by dividing line-height by font-size: 18/14=1.285*/
 }
 
-figure {}
+img {
+  width: 100%;
+}
 
-img {}
+figure {
+  margin: 0;
+}
 
 address {
     font-style: normal;
@@ -167,6 +171,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -240,6 +252,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -263,14 +278,11 @@ aside .form {
 }
  
 input[type=text] {
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
   font-style: italic;
   padding: 1em;
-  /*font-size: 1.125em; /*18px*/
-  /*font-weight: 500;*/
 }
  
 input[type=button] {
@@ -292,6 +304,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -495,11 +509,6 @@ input[type=button] {
     line-height: 1.25; /*30px, unitless, calculated by dividing line-height by font-size: 30/24=1.25*/
   }
 
-  p {
-    font-size: 1.125em; /*18px*/
-    line-height: 1.333; /*24px, unitless, calculated by dividing line-height by font-size: 24/18=1.333*/
-  }
-
   /*----- Header -----*/
   header {
     justify-content: space-around;
@@ -530,6 +539,10 @@ input[type=button] {
   /*--------------- TABLET STYLES -- HOMEPAGE ---------------*/
 
   /*----- Hero Area -----*/
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em; /*48px*/
     line-height: 1; /*48px, unitless, calculated by dividing line-height by font-size: 48/48=1*/
@@ -577,6 +590,7 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -639,6 +653,10 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
 
   /*--------------- TABLET STYLES -- FAQ PAGE ---------------*/
 
@@ -673,7 +691,7 @@ input[type=button] {
   }
 
   header {
-    padding: 15px;
+    padding: 15px 0;
   }
 
   h2 {
@@ -708,12 +726,16 @@ input[type=button] {
     width: 30%;
   }
 
-   /*----- Features -----*/
-   .features h2 {
-    width: 90%;
-   }
+  .form-description p {
+    font-size: 1.125em;
+  }
 
-   .features article {
+  /*----- Features -----*/
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
     flex-basis: 33%;
   }
 
