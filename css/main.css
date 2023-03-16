@@ -329,6 +329,11 @@ input[type=button] {
   text-align: center;
 }
 
+.features i {
+  font-size: 3.75em; /*60 px*/
+  margin-bottom: 40px;
+}
+
 /*----- Reviews -----*/
 .reviews {
   display: flex;
