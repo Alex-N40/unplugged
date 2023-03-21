@@ -245,6 +245,7 @@ footer .social-icons p {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  font-size: 0.875em;
 }
 
 footer .social-icons p i {
